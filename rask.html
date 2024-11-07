@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rask</title>
+    <style>
+        /* Estilos generales */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Título Rask */
+        h1 {
+            font-size: 3rem;
+            color: #1E90FF; /* Color azul para el título */
+            opacity: 0;
+            animation: slideDown 1.5s ease forwards;
+        }
+
+        /* Botón "Inicio" */
+        .inicio-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #1E90FF; /* Color azul */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 1s;
+            transition: background-color 0.3s ease;
+        }
+
+        .inicio-btn:hover {
+            background-color: #1C86EE;
+        }
+
+        /* Contenedor de descripción */
+        .description-container {
+            border: 2px solid #1E90FF; /* Borde azul */
+            border-radius: 25px;
+            padding: 20px;
+            background-color: rgba(30, 144, 255, 0.2); /* Fondo azul transparente */
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 1.5s;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Contenedor de imágenes */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 700px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 3s;
+        }
+
+        /* Estilos de las imágenes */
+        .image-container img {
+            width: 48%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón "Rask" */
+        .rask-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #1E90FF; /* Fondo azul */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 3.5s;
+            transition: background-color 0.3s ease;
+        }
+
+        .rask-btn:hover {
+            background-color: #1C86EE;
+        }
+
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animación de deslizamiento del título */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Rask</h1>
+
+    <!-- Botón "Inicio" -->
+    <a href="inicio.html" class="inicio-btn">Inicio</a>
+
+    <!-- Descripción -->
+    <div class="description-container">
+        <p class="description">
+            Rask IA es una innovadora plataforma de inteligencia artificial diseñada para facilitar la automatización y optimización de procesos. 
+            Con tecnologías avanzadas de procesamiento de datos y aprendizaje automático, Rask IA permite a las empresas mejorar la eficiencia 
+            y aumentar la productividad mediante soluciones personalizadas que se adaptan a cada necesidad específica.
+        </p>
+        <p class="description">
+            Nuestra misión es proporcionar herramientas accesibles y confiables para el análisis de datos y la toma de decisiones inteligentes. 
+            Con Rask IA, los usuarios pueden explorar una amplia gama de aplicaciones en distintos sectores, logrando un impacto positivo en sus 
+            operaciones diarias y potenciando el crecimiento a largo plazo.
+        </p>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="image-container">
+        <img src="rask 1.png" alt="Descripción de la primera imagen">
+        <img src="rask 2.webp" alt="Descripción de la segunda imagen">
+    </div>
+
+    <!-- Botón "Rask" debajo de las imágenes -->
+    <a href="https://es.rask.ai/" class="rask-btn" target="_blank">Rask</a>
+</body>
+</html>

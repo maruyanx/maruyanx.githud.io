@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    opacity: 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.section-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.section {
+    background-color: #333;
+    padding: 20px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white; /* Color del texto en blanco */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cambia el color del texto a blanco y evita que cambie en hover */
+.section-link .section:hover {
+    color: white;  /* Asegura que el texto siempre sea blanco */
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    background-color: #555;
+}
+
+.section:active {
+    transform: translateY(2px);
+}
+
+/* Animation for each letter of the title */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNO</title>
+    <style>
+        /* Estilos generales */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Título SUNO */
+        h1 {
+            font-size: 3rem;
+            color: #ff99cc;
+            opacity: 0;
+            animation: slideDown 1.5s ease forwards;
+        }
+
+        /* Botón "Inicio" */
+        .inicio-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ff99cc;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 1s;
+            transition: background-color 0.3s ease;
+        }
+
+        .inicio-btn:hover {
+            background-color: #ff66b2;
+        }
+
+        /* Contenedor de descripción */
+        .description-container {
+            border: 2px solid #ff99cc;
+            border-radius: 25px;
+            padding: 20px;
+            background-color: rgba(255, 153, 204, 0.2); /* Fondo rosa transparente */
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 1.5s;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #eee;
+        }
+
+        /* Contenedor de imágenes */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 700px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 3s;
+        }
+
+        /* Estilos de las imágenes */
+        .image-container img {
+            width: 48%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón "Suno" */
+        .suno-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 3.5s;
+            transition: background-color 0.3s ease;
+        }
+
+        .suno-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animación de deslizamiento del título */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Título -->
+    <h1>SUNO</h1>
+
+    <!-- Botón "Inicio" -->
+    <a href="inicio.html" class="inicio-btn">Inicio</a>
+
+    <!-- Descripción -->
+    <div class="description-container">
+        <p class="description">
+            Suno IA es una plataforma avanzada de inteligencia artificial diseñada para transformar la forma en que interactuamos con la tecnología. 
+            Con un enfoque en aprendizaje profundo, procesamiento de lenguaje natural y visión por computadora, Suno IA ofrece soluciones personalizadas y 
+            adaptables para empresas y usuarios individuales. Nuestra misión es empoderar a las personas a través de la tecnología, ofreciendo herramientas 
+            innovadoras que hagan más fácil la vida cotidiana, mejorando la eficiencia y ampliando las posibilidades de creación y análisis de datos.
+        </p>
+        <p class="description">
+            A medida que la inteligencia artificial sigue evolucionando, Suno IA se compromete a mantenerse a la vanguardia de los avances tecnológicos, 
+            garantizando seguridad, transparencia y un impacto positivo en la sociedad. Desde el análisis de datos hasta la automatización de procesos, 
+            Suno IA es el aliado perfecto para aquellos que buscan soluciones tecnológicas avanzadas y éticas.
+        </p>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="image-container">
+        <img src="Suno logo.png" alt="Descripción de la primera imagen">
+        <img src="suno 2.png" alt="Descripción de la segunda imagen">
+    </div>
+
+    <!-- Botón "Suno" debajo de las imágenes -->
+    <a href="https://suno.com/" class="suno-btn" target="_blank">Suno</a>
+</body>
+</html>
